@@ -19,6 +19,7 @@
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
     --grey-light: #E5EAF1;
+    --grey-medium: #EAECF2;
 
     /*O valor em pixels vai ser dividido por 10*/
     font-size: 62.5%; /*10px*/
@@ -81,7 +82,7 @@ button:hover, .button:hover{
     filter: brightness(1.2);
 }
 
-button > img
+button > img,
 .button > img{
     margin-right: 1rem;
     width: 2rem;
@@ -94,6 +95,19 @@ button.outlined,
     border: .2rem solid var(--blue);
 }
 
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white);
+}
+
+button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+/*header*/
 .content header{
     width: 80%;
     margin: 3.5rem auto;
